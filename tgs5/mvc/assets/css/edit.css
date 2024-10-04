@@ -1,0 +1,144 @@
+/* Mengatur tampilan body halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradasi biru modern */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Container untuk form edit dengan efek glassmorphism */
+form {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparansi putih */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out; /* Animasi form */
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efek garis dekoratif pada form */
+form::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    animation: rotate 10s linear infinite;
+}
+
+/* Animasi rotasi dekoratif */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Gaya untuk heading */
+h2 {
+    color: #ffeb3b;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Gaya untuk label */
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Gaya untuk input teks dan angka */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Efek fokus pada input */
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk tombol submit */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffeb3b;
+    color: #1e88e5;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 20px rgba(255, 235, 59, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+/* Efek hover pada tombol submit */
+button[type="submit"]:hover {
+    background-color: #fdd835;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(255, 235, 59, 0.6);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 26px;
+    }
+    input[type="text"],
+    input[type="number"] {
+        font-size: 14px;
+    }
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
