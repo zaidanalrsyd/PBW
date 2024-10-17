@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Mengatur tampilan body halaman */
 body {
     font-family: 'Poppins', sans-serif;
@@ -113,3 +114,120 @@ button[type="submit"]:hover {
         padding: 12px;
     }
 }
+=======
+/* Mengatur tampilan body halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradasi biru modern */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Container untuk form login dengan efek glassmorphism */
+form {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparansi putih */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 400px; /* Sesuaikan lebar maksimum */
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out; /* Animasi form */
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gaya untuk heading */
+h2 {
+    color: #ffeb3b; /* Warna kuning */
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Gaya untuk input teks */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Efek fokus pada input */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk tombol login */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffeb3b; /* Warna kuning */
+    color: #1e88e5; /* Warna biru */
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 20px rgba(255, 235, 59, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+/* Efek hover pada tombol login */
+button[type="submit"]:hover {
+    background-color: #fdd835; /* Kuning lebih cerah saat hover */
+    transform: translateY(-5px); /* Mengangkat tombol */
+    box-shadow: 0px 10px 30px rgba(255, 235, 59, 0.6);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 26px;
+    }
+    input[type="text"],
+    input[type="password"] {
+        font-size: 14px;
+    }
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+>>>>>>> 7f26814c5c468e696faf86c27532b7249815719e

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Mengatur tampilan body halaman */
 body {
     font-family: 'Poppins', sans-serif;
@@ -139,3 +140,146 @@ button:hover {
         padding: 12px 20px;
     }
 }
+=======
+/* Mengatur tampilan body halaman */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradasi biru modern */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Gaya untuk heading halaman admin */
+h2 {
+    color: #ffeb3b; /* Warna kuning */
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Gaya untuk link navigasi (Tambah Barang, Logout, dll.) */
+a {
+    text-decoration: none;
+    color: #ffeb3b;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparansi putih */
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Efek hover pada link navigasi */
+a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fdd835; /* Kuning lebih cerah */
+}
+
+/* Container untuk tabel dengan efek glassmorphism */
+table {
+    width: 100%;
+    max-width: 800px; /* Sesuaikan ukuran maksimum tabel */
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparansi tabel */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Gaya untuk header tabel */
+table th {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffeb3b; /* Warna kuning */
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Gaya untuk baris dan kolom tabel */
+table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table td {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+/* Gaya untuk link aksi (Edit dan Hapus) */
+table td a {
+    color: #d8e51e; /* Warna kuning */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efek hover pada link aksi */
+table td a:hover {
+    color: #ffeb3b; /* Warna kuning saat hover */
+}
+
+/* Gaya alternatif untuk baris tabel */
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Gaya untuk tombol aksi (misal: tambah barang) */
+button {
+    padding: 15px 30px;
+    background-color: #ffeb3b; /* Warna kuning */
+    color: #1e88e5; /* Warna biru */
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 20px rgba(255, 235, 59, 0.4);
+    margin: 20px 0;
+}
+
+/* Efek hover pada tombol aksi */
+button:hover {
+    background-color: #fdd835; /* Kuning lebih cerah */
+    transform: translateY(-5px); /* Mengangkat tombol */
+    box-shadow: 0px 10px 30px rgba(255, 235, 59, 0.6);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 26px;
+    }
+
+    table th,
+    table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+>>>>>>> 7f26814c5c468e696faf86c27532b7249815719e
